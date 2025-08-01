@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Default Prediction</title>
+</head>
+<body>
+    <h2>Loan Default Prediction</h2>
+    <form action="/predict" method="POST">
+        <label>Age:</label><input type="number" name="age" required><br>
+        <label>Income:</label><input type="number" name="income" required><br>
+        <label>Loan Amount:</label><input type="number" name="loan_amount" required><br>
+        <label>Education (0/1):</label><input type="number" name="education" required><br>
+        <label>Employment Type (0/1):</label><input type="number" name="employment" required><br>
+        <label>Marital Status (0/1):</label><input type="number" name="marital" required><br>
+        <label>Has Mortgage (0/1):</label><input type="number" name="mortgage" required><br>
+        <label>Has Dependents (0/1):</label><input type="number" name="dependents" required><br>
+        <label>Loan Purpose (0/1):</label><input type="number" name="purpose" required><br>
+        <label>Has Co-signer (0/1):</label><input type="number" name="cosigner" required><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
